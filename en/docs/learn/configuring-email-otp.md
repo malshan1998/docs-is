@@ -51,13 +51,17 @@ SendGrid APIs. Follow the instructions in **one** of **Option1** or
            <targetEpr></targetEpr>
            <subject>WSO2 IS Email OTP</subject>
            <body>
-              Hi,
-              Please use this one time password {OTPCode} to sign-in to your application.
+              <div>Hi,
+              <br>Please use this one time password {{OTPCode}} to sign-in to your application.</div>
            </body>
            <footer>
-              Best Regards,
-              WSO2 Identity Server Team
-              http://www.wso2.com
+              <div>Best Regards,
+              <br>WSO2 Identity Server Team
+              <br>http://www.wso2.com
+              <br>
+              <br>
+              <br>
+              </div>
            </footer>
            <redirectPath></redirectPath>
         </configuration>
@@ -87,6 +91,7 @@ SendGrid APIs. Follow the instructions in **one** of **Option1** or
         CaptureAndUpdateEmailAddress = true
         showEmailAddressInUI = true
         tokenExpirationTime = 300000
+        useEventHandlerBasedEmailSender = true
         ``` 
     
     
